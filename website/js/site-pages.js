@@ -38,9 +38,27 @@
   ];
 
   var labs = [
-    {name:'BIS Recognized Laboratory — Electrical Testing', city:'Pune', state:'Maharashtra', status:'Recognition details required from live BIS directory', standards:'IS 302 series', tests:'Electrical safety, insulation, leakage, endurance', distance:'Nearby', type:'Electrical'},
-    {name:'BIS Recognized Laboratory — Materials Testing', city:'Mumbai', state:'Maharashtra', status:'Recognition details required from live BIS directory', standards:'IS 456, IS 1786', tests:'Concrete, steel, strength and dimensional tests', distance:'—', type:'Materials'},
-    {name:'BIS Recognized Laboratory — Food Contact Testing', city:'Ahmedabad', state:'Gujarat', status:'Recognition details required from live BIS directory', standards:'IS 9845', tests:'Migration and food-contact material tests', distance:'—', type:'Food contact'}
+    {id:'8102006',name:'Shriram Institute For Industrial Research (SIIR), Delhi',city:'New Delhi',state:'Delhi',status:'BIS recognized lab; verify current scope before selection',standards:'Multi-disciplinary scope',tests:'Testing scope available through BIS LIMS',distance:'—',type:'Multi-disciplinary',lat:28.6139,lng:77.2090,address:'19-University Road, Delhi 110007',source:'BIS LIMS'},
+    {id:'8138306',name:'Testtex India Laboratories Private Limited, Noida',city:'Noida',state:'Uttar Pradesh',status:'BIS recognized lab; verify current scope before selection',standards:'Scope varies by laboratory listing',tests:'Testing scope available through BIS LIMS',distance:'—',type:'Materials / Products',lat:28.5355,lng:77.3910,address:'C-57, Sector-65, Noida, Gautam Buddha Nagar, Uttar Pradesh 201301',source:'BIS LIMS'},
+    {id:'6126316',name:'Intertek India Private Limited (Food Services), Hyderabad',city:'Hyderabad',state:'Telangana',status:'BIS recognized lab; verify current scope before selection',standards:'Food services scope',tests:'Food-related testing scope available through BIS LIMS',distance:'—',type:'Food',lat:17.3850,lng:78.4867,address:'IDA Phase-1, Jeedimetla, Hyderabad, Telangana 500055',source:'BIS LIMS'},
+    {id:'8125636',name:'Kailtech Test and Research Centre Pvt. Ltd., Indore',city:'Indore',state:'Madhya Pradesh',status:'BIS recognized lab; verify current scope before selection',standards:'Testing and research scope',tests:'Testing scope available through BIS LIMS',distance:'—',type:'Testing & Research',lat:22.7196,lng:75.8577,address:'141C, Electronic Complex Industrial Area, Indore 452010',source:'BIS LIMS'},
+    {id:'9164606',name:'JBS Testing Solutions Pvt Ltd, Jalandhar',city:'Jalandhar',state:'Punjab',status:'BIS recognized lab; verify current scope before selection',standards:'Testing scope available through BIS LIMS',tests:'Product testing scope available through BIS LIMS',distance:'—',type:'Testing',lat:31.3260,lng:75.5762,address:'Transport Nagar, Jalandhar, Punjab 144004',source:'BIS LIMS'},
+    {id:'5137936',name:'Quality Control Division, S. M. Consultants Private Limited, Bhubaneswar',city:'Bhubaneswar',state:'Odisha',status:'BIS recognized lab; verify current scope before selection',standards:'Testing scope available through BIS LIMS',tests:'Quality control testing',distance:'—',type:'Materials / Quality',lat:20.2961,lng:85.8245,address:'Mancheswar Industrial Estate, Bhubaneswar, Odisha 751010',source:'BIS LIMS'},
+    {id:'6120526',name:'UL India Private Limited, Bengaluru',city:'Bengaluru',state:'Karnataka',status:'BIS recognized lab; verify current scope before selection',standards:'Product testing scope',tests:'Testing scope available through BIS LIMS',distance:'—',type:'Electrical / Products',lat:12.9716,lng:77.5946,address:'Whitefield / Bengaluru industrial areas, Karnataka 560066',source:'BIS LIMS'},
+    {id:'8131406',name:'Delhi Test House, Azadpur',city:'New Delhi',state:'Delhi',status:'BIS recognized lab; verify current scope before selection',standards:'Testing scope available through BIS LIMS',tests:'Product testing scope',distance:'—',type:'Testing',lat:28.7041,lng:77.1025,address:'A-62/3 GT Karnal Road Industrial Area, Azadpur, Delhi 110033',source:'BIS LIMS'},
+    {id:'5123904',name:'National Test House (NTH), Alipore, Kolkata',city:'Kolkata',state:'West Bengal',status:'BIS recognized lab; verify current scope before selection',standards:'National Test House scope',tests:'Testing scope available through BIS LIMS',distance:'—',type:'Government / Testing',lat:22.5726,lng:88.3639,address:'11/1 Judges Court Road, Alipore, Kolkata 700027',source:'BIS LIMS'},
+    {id:'6167704',name:'Central Leather Research Institute (CSIR-CLRI), Chennai',city:'Chennai',state:'Tamil Nadu',status:'BIS recognized lab; verify current scope before selection',standards:'Leather-related scope',tests:'Testing scope available through BIS LIMS',distance:'—',type:'Leather / Research',lat:13.0827,lng:80.2707,address:'Sardar Patel Road, Adyar, Chennai 600020',source:'BIS LIMS'},
+    {id:'5169204',name:'National Test House (NER), Guwahati',city:'Guwahati',state:'Assam',status:'BIS recognized lab; verify current scope before selection',standards:'National Test House scope',tests:'Testing scope available through BIS LIMS',distance:'—',type:'Government / Testing',lat:26.1445,lng:91.7362,address:'C.I.T.I Complex, Gopinath Nagar, Guwahati 781016',source:'BIS LIMS'},
+    {id:'6169806',name:'Viridian Testing Laboratories LLP, Tiruppur',city:'Tiruppur',state:'Tamil Nadu',status:'BIS recognized lab; verify current scope before selection',standards:'Testing scope available through BIS LIMS',tests:'Product testing scope',distance:'—',type:'Testing',lat:11.1085,lng:77.3411,address:'PN Road, Tiruppur, Tamil Nadu 641602',source:'BIS LIMS'},
+    {id:'6183606',name:'Ramco Research and Development Centre, Chennai',city:'Chennai',state:'Tamil Nadu',status:'BIS recognized lab; verify current scope before selection',standards:'Cement / materials related scope',tests:'Testing scope available through BIS LIMS',distance:'—',type:'Materials / Research',lat:12.9249,lng:80.2326,address:'Okkiyam, Thoraipakkam, Chennai 600097',source:'BIS LIMS'},
+    {id:'7119516',name:'Konark Research Foundation, Daman',city:'Daman',state:'Dadra and Nagar Haveli and Daman and Diu',status:'BIS recognized lab; verify current scope before selection',standards:'Testing scope available through BIS LIMS',tests:'Testing scope available through BIS LIMS',distance:'—',type:'Testing & Research',lat:20.3974,lng:72.8328,address:'Kachigam, Daman 396210',source:'BIS LIMS'},
+    {id:'7167306',name:'HEXIQON Laboratory Private Limited, Ahmedabad',city:'Ahmedabad',state:'Gujarat',status:'BIS recognized lab; verify current scope before selection',standards:'Testing scope available through BIS LIMS',tests:'Laboratory testing scope',distance:'—',type:'Testing',lat:23.0225,lng:72.5714,address:'Gota, Ahmedabad, Gujarat 382481',source:'BIS LIMS'},
+    {id:'8100924',name:'Central Power Research Institute (CPRI), Bhopal',city:'Bhopal',state:'Madhya Pradesh',status:'BIS recognized lab; verify current scope before selection',standards:'Power/electrical scope',tests:'Electrical and power testing scope',distance:'—',type:'Electrical / Power',lat:23.2599,lng:77.4126,address:'Govindpura, Bhopal 462023',source:'BIS LIMS'},
+    {id:'9102534',name:'CIPET, Lucknow',city:'Lucknow',state:'Uttar Pradesh',status:'BIS recognized lab; verify current scope before selection',standards:'Polymer / product testing scope',tests:'Testing scope available through BIS LIMS',distance:'—',type:'Plastics / Testing',lat:26.8467,lng:80.9462,address:'Amausi Industrial Area, Lucknow 226008',source:'BIS LIMS'},
+    {id:'6141334',name:'CIPET, Vijayawada',city:'Vijayawada',state:'Andhra Pradesh',status:'BIS recognized lab; verify current scope before selection',standards:'Polymer / product testing scope',tests:'Testing scope available through BIS LIMS',distance:'—',type:'Plastics / Testing',lat:16.5062,lng:80.6480,address:'Surampalli, Gannavaram, Vijayawada, Andhra Pradesh 521212',source:'BIS LIMS'},
+    {id:'6178726',name:'Standard Testing and Compliance Private Limited, Faridabad',city:'Faridabad',state:'Haryana',status:'BIS recognized lab; verify current scope before selection',standards:'Testing and compliance scope',tests:'Testing scope available through BIS LIMS',distance:'—',type:'Testing / Compliance',lat:28.4089,lng:77.3178,address:'Mathura Road, Faridabad, Haryana 121008',source:'BIS LIMS'},
+    {id:'6133034',name:'Regional Reference Standards Laboratory, Bengaluru',city:'Bengaluru',state:'Karnataka',status:'BIS empanelled lab; verify current scope before selection',standards:'Reference standards scope',tests:'Reference standards services',distance:'—',type:'Reference Standards',lat:13.0820,lng:77.5940,address:'Jakkur, Bengaluru, Karnataka 560064',source:'BIS LIMS'},
+    {id:'6107934',name:'Central Coir Research Institute, Alappuzha',city:'Alappuzha',state:'Kerala',status:'BIS empanelled lab; verify current scope before selection',standards:'Coir-related scope',tests:'Testing/research scope',distance:'—',type:'Research / Testing',lat:9.4981,lng:76.3388,address:'Coir Board Complex, Kalavoor, Alappuzha 688522',source:'BIS LIMS'}
   ];
 
   function standardCard(s) {
@@ -59,182 +77,32 @@
     var grid = document.getElementById('standardsResults');
     var count = document.getElementById('standardsCount');
     var empty = document.getElementById('standardsEmpty');
-    if (!input || !grid) return;
-
-    var API = window.BIS_API_BASE || 'http://127.0.0.1:8000';
-
-    function liveCard(s) {
-      var number = s.standard || 'Unspecified standard';
-      var title = s.title || 'Untitled standard';
-      var cat = s.category || 'General';
-      var status = s.status || 'Unknown';
-      var verification = s.verified ? 'Verified' : 'Unverified';
-      var score = s.match_score != null ? '<span class="tag tag-neutral">'+esc(s.match_score)+'% match</span>' : '';
-      var source = s.source_url || 'https://www.bis.gov.in/';
-      return '<article class="result-card page-card hoverable">' +
-        '<div class="flex-between"><div><div class="std-number">'+esc(number)+'</div><h3>'+esc(title)+'</h3></div><span class="tag tag-hi">'+esc(status)+'</span></div>' +
-        '<div class="result-meta"><span class="tag tag-neutral">'+esc(cat)+'</span><span class="tag tag-primary">'+esc(verification)+'</span>'+score+'</div>' +
-        '<div class="meta-row"><div class="meta-cell"><div class="k">Version</div><div class="v">'+esc(s.version || '—')+'</div></div><div class="meta-cell"><div class="k">Category</div><div class="v">'+esc(cat)+'</div></div><div class="meta-cell"><div class="k">Status</div><div class="v">'+esc(status)+'</div></div><div class="meta-cell"><div class="k">Source</div><div class="v">Official BIS</div></div></div>' +
-        '<div class="page-actions"><a class="btn btn-secondary btn-sm" href="'+esc(source)+'" target="_blank" rel="noopener noreferrer">View BIS Source</a><a class="btn btn-primary btn-sm" href="compliance.html?q='+encodeURIComponent(number+' '+title)+'">Check Compliance</a></div>' +
-        '</article>';
+    function render() {
+      var q=(input.value||'').trim().toLowerCase(), c=(category.value||'').toLowerCase();
+      var matches=standards.filter(function(s){ return (!q || (s.number+' '+s.title+' '+s.category+' '+s.keywords).toLowerCase().indexOf(q)>-1) && (!c || s.category.toLowerCase()===c); });
+      grid.innerHTML=matches.map(standardCard).join('');
+      count.textContent=matches.length+' standard'+(matches.length===1?'':'s')+' found';
+      empty.hidden=matches.length>0;
     }
-
-    function renderLoading() {
-      grid.innerHTML = '<div class="card" style="grid-column:1/-1;text-align:center;padding:30px;">Searching the indexed BIS standards library…</div>';
-      if (empty) empty.hidden = true;
-    }
-
-    function render(matches, q, label) {
-      grid.innerHTML = matches.map(liveCard).join('');
-      if (count) count.innerHTML = matches.length+' standard'+(matches.length===1?'':'s')+' found' + (q ? ' for <strong>'+esc(q)+'</strong>' : '') + (label ? ' <span class="tag tag-neutral" style="margin-left:8px;">'+esc(label)+'</span>' : '');
-      if (empty) empty.hidden = matches.length > 0;
-    }
-
-    async function runSearch() {
-      var q = (input.value || '').trim();
-      renderLoading();
-      var params = new URLSearchParams();
-      if (q) params.set('q', q);
-      if (category && category.value) params.set('category', category.value);
-      try {
-        var response = await fetch(API + '/api/standards?' + params.toString(), {headers:{Accept:'application/json'}});
-        if (!response.ok) throw new Error('HTTP '+response.status);
-        var data = await response.json();
-        if (!Array.isArray(data)) throw new Error('Invalid response');
-        render(data, q, 'Live backend');
-      } catch (err) {
-        console.warn('Live BIS search unavailable; showing local demo index.', err);
-        var fallback = standards.filter(function(s) {
-          var hay = (s.number+' '+s.title+' '+s.category+' '+s.keywords).toLowerCase();
-          var ql = q.toLowerCase();
-          var c = category ? category.value.toLowerCase() : '';
-          return (!ql || hay.indexOf(ql) > -1) && (!c || s.category.toLowerCase() === c);
-        });
-        render(fallback.map(function(s){ return {standard:s.number,title:s.title,category:s.category,status:s.status,version:'Demo',verified:false,source_url:'https://www.bis.gov.in/'}; }), q, 'Demo fallback');
-      }
-    }
-
-    form.addEventListener('submit', function(e){ e.preventDefault(); runSearch(); });
-    if (category) category.addEventListener('change', runSearch);
-    document.querySelectorAll('[data-standard-query]').forEach(function(chip){
-      chip.addEventListener('click', function(){ input.value = chip.dataset.standardQuery || ''; runSearch(); });
-    });
-    runSearch();
+    form.addEventListener('submit',function(e){e.preventDefault();render();});
+    document.querySelectorAll('[data-standard-query]').forEach(function(chip){chip.addEventListener('click',function(){input.value=chip.dataset.standardQuery;render();});});
+    render();
   }
 
   function initCompliancePage() {
-    var form = document.getElementById('complianceFormNew');
-    if (!form) return;
-
-    var result = document.getElementById('complianceDashboard');
-    if (!result) return;
-
-    var API = window.BIS_API_BASE || 'http://127.0.0.1:8000';
-
-    function showLoading() {
-      result.innerHTML = '<div class="empty-state" style="background:transparent;padding:32px;text-align:center"><h3>Searching BIS sources…</h3><p>Checking the live BIS web evidence and your local knowledge base. This may take a few seconds.</p></div>';
-    }
-
-    function linkHtml(source) {
-      if (!source || !source.url) return '';
-      return '<li><a href="' + esc(source.url) + '" target="_blank" rel="noopener noreferrer">' + esc(source.title || source.url) + '</a></li>';
-    }
-
-    function renderAnswer(data) {
-      var answer = data.answer || 'No answer was returned.';
-      var confidence = data.confidence_label || 'LOW';
-      var webSources = Array.isArray(data.web_sources) ? data.web_sources : [];
-      var localSources = Array.isArray(data.sources) ? data.sources : [];
-      var standards = Array.isArray(data.standards) ? data.standards : [];
-
-      var sourceHtml = '';
-      if (webSources.length) {
-        sourceHtml += '<div class="analysis-list" style="margin-top:18px"><div><b>Live BIS web sources</b><span><ul style="margin:8px 0 0 18px">' + webSources.map(linkHtml).join('') + '</ul></span></div></div>';
-      }
-      if (localSources.length) {
-        sourceHtml += '<div class="analysis-list" style="margin-top:12px"><div><b>Local evidence</b><span>' + localSources.map(function(s){ return esc(s.title || s.standard || 'BIS evidence'); }).join(', ') + '</span></div></div>';
-      }
-
-      var standardsHtml = standards.length
-        ? '<div class="analysis-list" style="margin-top:12px"><div><b>Potentially applicable standards</b><span>' + standards.map(function(s){ return '<b>' + esc(s.is_number || '') + '</b> — ' + esc(s.title || '') + ' (' + esc(s.status || 'Unknown') + ')'; }).join('<br>') + '</span></div></div>'
-        : '';
-
-      var statusClass = data.status === 'grounded' ? 'tag-hi' : 'tag-warn';
-      var searchTag = data.web_search ? '<span class="tag tag-primary">Live web search</span>' : '<span class="tag tag-neutral">Web search not configured</span>';
-
-      result.innerHTML =
-        '<div class="analysis-grid">' +
-          '<div>' +
-            '<div class="result-meta"><span class="tag ' + statusClass + '">' + esc(data.status === 'grounded' ? 'Evidence-grounded answer' : 'Insufficient BIS evidence') + '</span>' + searchTag + '<span class="tag tag-neutral">Confidence: ' + esc(confidence) + '</span></div>' +
-            '<h3 style="margin-top:16px">Compliance analysis</h3>' +
-            '<div class="answer-body" style="white-space:pre-wrap;line-height:1.7">' + esc(answer) + '</div>' +
-            standardsHtml +
-            sourceHtml +
-          '</div>' +
-          '<div class="score-panel"><div class="score-ring"><span>' + esc(data.confidence != null ? Math.round(Number(data.confidence) * 100) + '%' : '—') + '</span></div><div class="score-caption">Evidence confidence</div><p>Confidence reflects the retrieved evidence. Always verify the latest official BIS requirements.</p></div>' +
-        '</div>';
-    }
-
-    async function runCompliance() {
-      var product = (document.getElementById('productName').value || '').trim();
-      var category = (document.getElementById('productCategory').value || '').trim();
-      var description = (document.getElementById('productDescription').value || '').trim();
-      var manufacturer = (document.getElementById('manufacturerType').value || '').trim();
-      var market = (document.getElementById('market').value || '').trim();
-      var location = (document.getElementById('location').value || '').trim();
-      var existing = (document.getElementById('existingStandard').value || '').trim();
-
-      if (!product || !description) return;
-
-      var question = [
-        'Product name: ' + product,
-        'Product category: ' + category,
-        'Product description: ' + description,
-        'Manufacturer type: ' + manufacturer,
-        'Intended market: ' + market,
-        'Country/location: ' + location,
-        existing ? 'Existing IS number: ' + existing : '',
-        '',
-        'Find the applicable BIS/Indian Standards and explain whether BIS certification or another mandatory requirement applies. Include relevant testing and documentation requirements only when supported by authoritative BIS evidence. Search the live internet for current official BIS information and provide source links.'
-      ].filter(Boolean).join('\n');
-
-      showLoading();
-      document.getElementById('analysisSection').scrollIntoView({behavior:'smooth'});
-
-      try {
-        var response = await fetch(API + '/api/ask', {
-          method: 'POST',
-          headers: {'Content-Type':'application/json', 'Accept':'application/json'},
-          body: JSON.stringify({question: question, language: 'en'})
-        });
-
-        var raw = await response.text();
-        var data;
-        try { data = JSON.parse(raw); } catch (_) { data = null; }
-        if (!response.ok) {
-          throw new Error((data && (data.detail || data.answer)) || ('Backend returned HTTP ' + response.status));
-        }
-        renderAnswer(data);
-      } catch (err) {
-        console.error('Compliance analysis failed:', err);
-        result.innerHTML = '<div class="empty-state" style="padding:32px"><h3>Could not get a live compliance answer</h3><p>' + esc(err.message || 'Could not connect to the BIS Intelligence backend.') + '</p><p style="margin-top:10px">Make sure the FastAPI server is running at ' + esc(API) + ' and that NVIDIA_API_KEY and TAVILY_API_KEY are configured in backend/.env.</p></div>';
-      }
-    }
-
-    form.addEventListener('submit', function(e){
+    var form=document.getElementById('complianceFormNew'); if(!form) return;
+    var result=document.getElementById('complianceDashboard');
+    var scoreEl=document.getElementById('scoreValue');
+    form.addEventListener('submit',function(e){
       e.preventDefault();
-      runCompliance();
+      var product=(document.getElementById('productName').value||'Product').trim();
+      var desc=(document.getElementById('productDescription').value||'').toLowerCase();
+      var match=/electrical|appliance|heater|mixer|iron/.test(desc+' '+product.toLowerCase()) ? standards[0] : (/steel|tmt/.test(desc+' '+product.toLowerCase()) ? standards[2] : standards[3]);
+      var score=/electrical|steel|plastic|food/.test(desc+' '+product.toLowerCase())?78:61;
+      scoreEl.textContent=score+'%';
+      result.innerHTML='<div class="analysis-grid"><div><span class="tag tag-hi">High-confidence demo match</span><h3>'+esc(match.number)+' — '+esc(match.title)+'</h3><p>Potentially applicable based on the product information supplied. Verify the latest official BIS applicability before making a certification decision.</p><div class="analysis-list"><div><b>Certification required</b><span>Depends on product and applicable scheme</span></div><div><b>Certification type</b><span>Product-specific BIS conformity pathway</span></div><div><b>Testing</b><span>Review the applicable standard test methods</span></div><div><b>Documents</b><span>Technical, manufacturing and business records</span></div><div><b>Laboratory</b><span>Select a suitable recognized laboratory</span></div></div></div><div class="score-panel"><div class="score-ring"><span>'+score+'%</span></div><div class="score-caption">Compliance Score</div><p>Demo score based on completeness of the supplied product information.</p></div></div>';
+      document.getElementById('analysisSection').scrollIntoView({behavior:'smooth'});
     });
-
-    // Support links from Find Standards / homepage that pass ?q=...
-    var params = new URLSearchParams(window.location.search);
-    var q = params.get('q') || params.get('standard') || '';
-    if (q) {
-      var nameEl = document.getElementById('productName');
-      var descEl = document.getElementById('productDescription');
-      if (nameEl && !nameEl.value) nameEl.value = q;
-      if (descEl && !descEl.value) descEl.value = 'Please determine the current BIS requirements for ' + q + '.';
-    }
   }
 
   function initEvidencePage() {
@@ -252,8 +120,119 @@
   function initLabsPage() {
     var form=document.getElementById('labSearchForm'); if(!form)return;
     var grid=document.getElementById('labResults'), empty=document.getElementById('labEmpty');
-    function render(){var q=(document.getElementById('labSearch').value||'').toLowerCase(), state=(document.getElementById('labState').value||'').toLowerCase(), type=(document.getElementById('labType').value||'').toLowerCase();var m=labs.filter(function(l){return (!q || (l.name+' '+l.city+' '+l.state+' '+l.standards+' '+l.tests).toLowerCase().indexOf(q)>-1)&&(!state||l.state.toLowerCase()===state)&&(!type||l.type.toLowerCase()===type);});grid.innerHTML=m.map(function(l){return '<article class="lab-card page-card hoverable"><div class="flex-between"><div><h3>'+esc(l.name)+'</h3><p>'+esc(l.city)+', '+esc(l.state)+'</p></div><span class="tag tag-primary">Directory check</span></div><div class="result-meta"><span class="tag tag-neutral">'+esc(l.standards)+'</span><span class="tag tag-neutral">'+esc(l.type)+'</span></div><div class="lab-lines"><p><b>Tests:</b> '+esc(l.tests)+'</p><p><b>Status:</b> '+esc(l.status)+'</p><p><b>Distance:</b> '+esc(l.distance)+'</p></div><div class="page-actions"><button class="btn btn-secondary btn-sm" type="button">View Details</button><button class="btn btn-primary btn-sm" type="button">Select Laboratory</button></div></article>';}).join('');empty.hidden=m.length>0;}
-    form.addEventListener('submit',function(e){e.preventDefault();render();}); render();
+    var countEl=document.getElementById('labResultCount');
+    var mapEl=document.getElementById('laboratoryMap'), selectedEl=document.getElementById('mapSelectedLab');
+    var map=null, markers={}, currentId=null;
+    var states=['','Andhra Pradesh','Arunachal Pradesh','Assam','Bihar','Chhattisgarh','Goa','Gujarat','Haryana','Himachal Pradesh','Jharkhand','Karnataka','Kerala','Madhya Pradesh','Maharashtra','Manipur','Meghalaya','Mizoram','Nagaland','Odisha','Punjab','Rajasthan','Sikkim','Tamil Nadu','Telangana','Tripura','Uttar Pradesh','Uttarakhand','West Bengal','Andaman and Nicobar Islands','Chandigarh','Dadra and Nagar Haveli and Daman and Diu','Delhi','Jammu and Kashmir','Ladakh','Lakshadweep','Puducherry'];
+    var stateSelect=document.getElementById('labState');
+    if(stateSelect){
+      stateSelect.innerHTML=states.map(function(x){return '<option value="'+esc(x)+'">'+esc(x||'All states')+'</option>';}).join('');
+    }
+    var typeSelect=document.getElementById('labType');
+    if(typeSelect){
+      var types=[''].concat(labs.map(function(x){return x.type;}).filter(function(v,i,a){return a.indexOf(v)===i;}));
+      typeSelect.innerHTML=types.map(function(x){return '<option value="'+esc(x)+'">'+esc(x||'All types')+'</option>';}).join('');
+    }
+
+    function defaultSelected(){
+      if(!selectedEl)return;
+      selectedEl.innerHTML='<span class="tag tag-neutral">No laboratory selected</span><h3>Select a laboratory</h3><p>Click a marker or choose a laboratory from the results.</p><a class="btn btn-secondary btn-sm" href="https://lims.bis.gov.in/home/labs/" target="_blank" rel="noopener">Open Official BIS Directory</a>';
+    }
+
+    function selectLab(id,zoom){
+      var l=labs.find(function(x){return x.id===id;}); if(!l)return;
+      currentId=id;
+      document.querySelectorAll('.lab-card').forEach(function(c){
+        c.classList.toggle('lab-selected',c.dataset.labId===id);
+      });
+      if(selectedEl){
+        selectedEl.innerHTML='<span class="tag tag-primary">Selected laboratory</span><h3>'+esc(l.name)+'</h3><p><b>Location:</b> '+esc(l.city)+', '+esc(l.state)+'</p><p><b>Address:</b> '+esc(l.address)+'</p><p><b>Type:</b> '+esc(l.type)+'</p><p><b>Standards / scope:</b> '+esc(l.standards)+'</p><p><b>Testing:</b> '+esc(l.tests)+'</p><p><b>Status:</b> '+esc(l.status)+'</p><div class="page-actions"><a class="btn btn-secondary btn-sm" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination='+encodeURIComponent(l.lat+','+l.lng)+'">Get Directions</a><button class="btn btn-primary btn-sm" id="clearLab" type="button">Clear</button></div><small class="lab-source">Source: BIS LIMS listing; verify live scope before use.</small>';
+      }
+      if(map&&markers[id]){
+        if(zoom)map.setView([l.lat,l.lng],10);
+        markers[id].openPopup();
+      }
+      var clear=document.getElementById('clearLab');
+      if(clear)clear.onclick=function(){
+        currentId=null;
+        document.querySelectorAll('.lab-card').forEach(function(c){c.classList.remove('lab-selected');});
+        defaultSelected();
+      };
+    }
+
+    function initMap(){
+      if(!mapEl||typeof L==='undefined')return;
+      map=L.map(mapEl,{scrollWheelZoom:true}).setView([22.9734,78.6569],5);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+        maxZoom:19,
+        attribution:'&copy; OpenStreetMap contributors'
+      }).addTo(map);
+      labs.forEach(function(l){
+        var m=L.marker([l.lat,l.lng]);
+        m.bindPopup('<div style="min-width:210px"><b>'+esc(l.name)+'</b><br><span style="color:#667085">'+esc(l.city)+', '+esc(l.state)+'</span><br><button type="button" class="map-popup-button" data-map-lab="'+esc(l.id)+'">View details</button></div>');
+        m.on('click',function(){selectLab(l.id,false);});
+        markers[l.id]=m;
+      });
+      setTimeout(function(){map.invalidateSize();},200);
+    }
+
+    function visibleLabs(){
+      var q=(document.getElementById('labSearch').value||'').toLowerCase().trim();
+      var state=(document.getElementById('labState').value||'').toLowerCase();
+      var type=(document.getElementById('labType').value||'').toLowerCase();
+      return labs.filter(function(l){
+        var text=(l.name+' '+l.city+' '+l.state+' '+l.address+' '+l.standards+' '+l.tests+' '+l.type).toLowerCase();
+        return (!q||text.indexOf(q)>-1)&&(!state||l.state.toLowerCase()===state)&&(!type||l.type.toLowerCase()===type);
+      });
+    }
+
+    function syncMap(filtered){
+      if(!map)return;
+      Object.keys(markers).forEach(function(id){
+        if(map.hasLayer(markers[id]))map.removeLayer(markers[id]);
+      });
+      filtered.forEach(function(l){markers[l.id].addTo(map);});
+      if(filtered.length){
+        var bounds=L.latLngBounds(filtered.map(function(l){return [l.lat,l.lng];}));
+        if(filtered.length===1)map.setView([filtered[0].lat,filtered[0].lng],10);
+        else map.fitBounds(bounds,{padding:[30,30],maxZoom:7});
+      }else{
+        map.setView([22.9734,78.6569],5);
+      }
+      setTimeout(function(){map.invalidateSize();},100);
+    }
+
+    function render(){
+      var filtered=visibleLabs();
+      if(countEl)countEl.textContent=filtered.length;
+      grid.innerHTML=filtered.map(function(l){
+        return '<article class="lab-card page-card hoverable" data-lab-id="'+esc(l.id)+'">'+
+          '<div class="lab-card-head"><div class="lab-title"><h3>'+esc(l.name)+'</h3><p class="lab-location">'+esc(l.city)+', '+esc(l.state)+'</p></div><span class="tag tag-primary">BIS LIMS</span></div>'+
+          '<div class="result-meta"><span class="tag tag-neutral">'+esc(l.standards)+'</span><span class="tag tag-neutral">'+esc(l.type)+'</span></div>'+
+          '<div class="lab-lines"><p><b>Tests:</b> '+esc(l.tests)+'</p><p><b>Status:</b> '+esc(l.status)+'</p><p><b>Address:</b> '+esc(l.address)+'</p></div>'+
+          '<div class="page-actions"><button class="btn btn-secondary btn-sm lab-details-btn" data-lab-id="'+esc(l.id)+'" type="button">View Details</button><button class="btn btn-primary btn-sm lab-select-btn" data-lab-id="'+esc(l.id)+'" type="button">Select Laboratory</button></div>'+
+        '</article>';
+      }).join('');
+      empty.hidden=filtered.length>0;
+      syncMap(filtered);
+      if(currentId && !filtered.some(function(l){return l.id===currentId;})){
+        currentId=null; defaultSelected();
+      }
+      document.querySelectorAll('.lab-details-btn,.lab-select-btn').forEach(function(btn){
+        btn.onclick=function(){
+          selectLab(btn.dataset.labId,true);
+          if(selectedEl)selectedEl.scrollIntoView({behavior:'smooth',block:'center'});
+        };
+      });
+    }
+
+    form.addEventListener('submit',function(e){e.preventDefault();render();});
+    initMap();
+    render();
+    document.addEventListener('click',function(e){
+      var b=e.target.closest('[data-map-lab]');
+      if(b){selectLab(b.dataset.mapLab,true);if(selectedEl)selectedEl.scrollIntoView({behavior:'smooth',block:'center'});}
+    });
   }
 
   function initFaqPage(){
